@@ -6,6 +6,33 @@
     <title>Lämpötilamuunnin</title>
 </head>
 <body>
-    
+    <h1>Lämpötilamuunnin</h1>
+    <form action="/action_page.php">
+        
+        <select id="yksikot" name="yksikot">
+          <option value="cf">Celcius -> Fahrenheit</option>
+          <option value="ck">Celcius -> Kelvin</option>
+          <option value="fc">Fahrenheit -> Celcius</option>
+          <option value="fk">Fahrenheit -> Kelvin</option>
+          <option value="kf">Kelvin -> Fahrenheit</option>
+          <option value="kc">Kelvin -> Celvius</option>
+        </select>
+        
+      </form>
+      <br>
+    <form action="/action_page.php">
+        <label for="fname">Syötä lämpötila:</label><br>
+        <input type="text" id="flampo" name="flampo" value=""><br><br>
+        
+    </form>
+    <form>
+        <input type="radio" id="yksi" name="desimaali" value="yksi">
+        <label for="yksi">1 desimaali</label><br>
+        <input type="radio" id="kaksi" name="desimaali" value="kaksi">
+        <label for="kaksi">2 desimaali</label><br>
+        <input type="radio" id="kolme" name="desimaali" value="kolme">
+        <label for="kolme">3 desimaali</label><br><br>
+        <input type="submit" value="Muunna">
+      </form>
 </body>
 </html>
