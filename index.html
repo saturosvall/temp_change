@@ -7,9 +7,10 @@
 </head>
 <body>
     <h1>Lämpötilamuunnin</h1>
-    <form action="/action_page.php">
-        
+    
+    <form name="valikko">
         <select id="yksikot" name="yksikot">
+          <option value="info">Valitse muunnin</option>
           <option value="cf">Celcius -> Fahrenheit</option>
           <option value="ck">Celcius -> Kelvin</option>
           <option value="fc">Fahrenheit -> Celcius</option>
@@ -20,19 +21,24 @@
         
       </form>
       <br>
-    <form action="/action_page.php">
-        <label for="fname">Syötä lämpötila:</label><br>
+    <form name="inputti" id="formMuunna">
+        <p>Syötä lämpötila</p>
         <input type="text" id="flampo" name="flampo" value=""><br><br>
-        
     </form>
-    <form>
+    <!--
+    <form name="desimaalit">
         <input type="radio" id="yksi" name="desimaali" value="yksi">
         <label for="yksi">1 desimaali</label><br>
         <input type="radio" id="kaksi" name="desimaali" value="kaksi">
         <label for="kaksi">2 desimaali</label><br>
         <input type="radio" id="kolme" name="desimaali" value="kolme">
         <label for="kolme">3 desimaali</label><br><br>
-        <input type="submit" value="Muunna">
-      </form>
+        <!--<input type="submit" id="muunna" value="Muunna">-->
+        <button id="btnMuunna">Muunna</button>
+    </form>
+      <p id='tulos'>Tulos:</p>
+
+      
+      <script src="main.js"></script>
 </body>
 </html>
