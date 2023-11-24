@@ -8,7 +8,8 @@
 <body>
     <h1>Lämpötilamuunnin</h1>
     
-    <form name="valikko">
+    <!-- VALIKKO -->
+    <form id="formMuunna">
         <select id="yksikot" name="yksikot">
           <option value="info">Valitse muunnin</option>
           <option value="cf">Celcius -> Fahrenheit</option>
@@ -18,13 +19,12 @@
           <option value="kf">Kelvin -> Fahrenheit</option>
           <option value="kc">Kelvin -> Celvius</option>
         </select>
-        
-      </form>
-      <br>
-    <form name="inputti" id="formMuunna">
+
+    <!-- SYÖTTEEN INPUT -->
         <p>Syötä lämpötila</p>
         <input type="text" id="flampo" name="flampo" value=""><br><br>
-    </form>
+        
+    <!-- DESIMAALIT -->
     <!--
     <form name="desimaalit">
         <input type="radio" id="yksi" name="desimaali" value="yksi">
@@ -32,9 +32,11 @@
         <input type="radio" id="kaksi" name="desimaali" value="kaksi">
         <label for="kaksi">2 desimaali</label><br>
         <input type="radio" id="kolme" name="desimaali" value="kolme">
-        <label for="kolme">3 desimaali</label><br><br>
-        <!--<input type="submit" id="muunna" value="Muunna">-->
+        <label for="kolme">3 desimaali</label><br><br>-->
+    
+    <!-- MUUNNA-NÄPPÄIN -->   
         <button id="btnMuunna">Muunna</button>
+        <!--<button onclick="muunnaLampo()">Muunna</button>-->
     </form>
       <p id='tulos'>Tulos:</p>
 
