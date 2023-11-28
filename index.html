@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lämpötilamuunnin</title>
+
+    <style>
+        div {
+            width: 600px;
+            margin: auto;            
+        }
+        
+        h1 {
+          color: rgb(17, 17, 85);
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 300%;
+        }
+        p {
+          color: rgb(5, 5, 5);
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 160%;
+        }
+        </style>
 </head>
 <body>
+    <div>
     <main id="main">
     <h1>Lämpötilamuunnin</h1>
     
@@ -29,20 +48,22 @@
     
         
         <input type="radio" id="yksi" name="desimaali" value="yksi">
-        <label for="yksi">1 desimaali</label><br>
+        <label for="yksi">1 desimaalin tarkkuudella</label><br>
         <input type="radio" id="kaksi" name="desimaali" value="kaksi">
-        <label for="kaksi">2 desimaali</label><br>
+        <label for="kaksi">2 desimaalin tarkkuudella</label><br>
         <input type="radio" id="kolme" name="desimaali" value="kolme">
-        <label for="kolme">3 desimaali</label><br><br>
+        <label for="kolme">3 desimaaln tarkkuudella</label><br><br>
     
     <!-- MUUNNA-NÄPPÄIN -->   
         <button id="btnMuunna">Muunna</button>
         <!--<button onclick="muunnaLampo()">Muunna</button>-->
     </form>
       <p id='tulos'>Tulos:</p>
+      <p id='huomio'></p>
 
       
       <script src="main.js"></script>
     </main>
+</div>
 </body>
 </html>
