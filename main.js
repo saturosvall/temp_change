@@ -3,6 +3,8 @@ document.body.style.fontFamily = "Tahoma";
 
 function muunnaLampo(event) {
     event.preventDefault()
+    // tyhjennetään huomiokenttä
+    document.getElementById('huomio').innerHTML = ""
     
     // valikosta valittava syote
     let valinta = document.getElementById("yksikot").value;
@@ -17,7 +19,6 @@ function muunnaLampo(event) {
     
     // desimaalin todentaminen
     let desimaali = '';
-
     if(document.getElementById('yksi').checked == true) {
         desimaali = "yksi";
     } else if(document.getElementById('kaksi').checked == true) {
@@ -28,7 +29,7 @@ function muunnaLampo(event) {
 
    
     // laskutoimitukset
-    
+
     if(valinta == "cf") {
         tulos = (syote)* 1.8 + 32; // kaava celsiuksesta fahrenheitiin
         document.getElementById('tulos').innerHTML = "Fahrenheitia";
@@ -87,4 +88,3 @@ function muunnaLampo(event) {
 
     document.body.style.backgroundColor = "#dedede";
 }
-
